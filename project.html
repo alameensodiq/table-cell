@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Form</title>
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body onload="init()">
+
+    <div class="wrapper">
+        <h2>Club Membership Form</h2> 
+        <section>
+            <form>
+                <div class="input-title">
+                    <label for="firstname" class="input-title-name">First Name:</label>
+                    <input type="text" name="firstname" id="firstname" placeholder="Al-ameen" required>
+                </div>
+
+                <div class="input-title">
+                    <label for="surname" class="input-title-name">Surname:</label>
+                    <input type="text" name="surname" id="surname" placeholder="Sodiq" required>
+                </div>
+
+                <div class="input-title">
+                    <label for="age" class="input-title-name">Age:</label>
+                    <input type="number" name="age" id="age" min="1" max="200" step="1">
+                </div>
+                
+                <div class="input-title">
+                    <label for="level" class="input-title-name">Current Level:</label>
+                    <input type="number" name="level" id="level" min="100" max="500" step="100">
+                </div>
+
+                <div class="input-title">
+                    <label for="club" class="input-title-name">Favourite Club:</label>
+                    <input type="text" name="club" id="club" placeholder="Favourite Club" required>
+                </div>
+
+                <div>
+                    <button type="submit" onclick="onSubmitButton()">Submit</button>
+                </div>
+            </form>
+        </section>
+    </div>
+
+    <div class="wrapper2">
+        <section>
+            <h3>List of Current Members of the Club</h3>
+            <div>
+                <table id="regtable" border="1">
+                    <thead>
+                        <tr>
+                            <th>First Name</th>
+                            <th>Surname</th>
+                            <th>Age</th>
+                            <th>Current Level</th>
+                            <th>Favourite Club</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbodyrows">
+                        
+                    </tbody>
+                </table>
+            </section>
+        </div>
+            </div>
+            
+    <script src="project.js"></script>
+</body>
+</html>
